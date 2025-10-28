@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arpon Saha — Professional Portfolio</title>
+  <meta name="description" content="Arpon Saha — Textile Engineer. Portfolio featuring projects, certifications, interactive gallery and contact.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <div class="logo">AS</div>
+        <div>
+          <div class="brand-name">Arpon Saha</div>
+          <div class="brand-sub">Textile Engineer • Production • Merchandising • Sustainability</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a class="btn-ghost" href="Arpon_Saha_Resume.pdf" download>Download CV</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu" onclick="toggleMobileMenu()">☰</button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" style="display:none">
+    <a href="#home" onclick="toggleMobileMenu()">Home</a>
+    <a href="#about" onclick="toggleMobileMenu()">About</a>
+    <a href="#projects" onclick="toggleMobileMenu()">Projects</a>
+    <a href="#gallery" onclick="toggleMobileMenu()">Gallery</a>
+    <a href="#contact" onclick="toggleMobileMenu()">Contact</a>
+    <a class="btn-ghost" href="Arpon_Saha_Resume.pdf" download>Download CV</a>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-left reveal">
+          <h1>Hello — I'm <span class="accent">Arpon</span></h1>
+          <h2 class="subhead">Textile Engineer focused on process optimization, sustainable supply chains and creative textile solutions.</h2>
+          <p class="muted">BSc in Textile Engineering (BUTEX) — CGPA 3.37 • Internship at JK Knit Composite Ltd</p>
+          <div class="hero-cta">
+            <a class="btn" href="#contact">Hire / Contact</a>
+            <a class="btn outline" href="#projects">View Projects</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>3+</strong><span>Certifications</span></div>
+            <div><strong>1</strong><span>Industrial Internship</span></div>
+            <div><strong>10%</strong><span>Process efficiency gain (IE support)</span></div>
+          </div>
+        </div>
+        <div class="hero-right reveal">
+          <div class="profile-card">
+            <img src="assets/placeholder-profile.jpg" alt="Arpon Saha" class="profile-photo" id="profilePhoto">
+            <div class="profile-info">
+              <h3>Arpon Saha</h3>
+              <p class="muted small">Textile Engineer • Production • Merchandising • Lean Management</p>
+              <ul class="contact-list">
+                <li><strong>Email:</strong> <a href="mailto:arponbutextem65@gmail.com">arponbutextem65@gmail.com</a></li>
+                <li><strong>Phone:</strong> +8801789849716</li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arponsaha/" target="_blank" rel="noopener">arponsaha</a></li>
+              </ul>
+              <div class="profile-actions">
+                <label class="upload-btn">
+                  Upload Photo
+                  <input type="file" accept="image/*" id="uploadImage" onchange="previewProfile(event)">
+                </label>
+                <a class="btn small" href="Arpon_Saha_Resume.pdf" download>Download CV</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="container about reveal" id="about">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div>
+          <p>A technically skilled and management-focused Textile Engineering graduate with hands-on industrial experience in knit production, dyeing, testing and merchandising coordination. I blend process engineering with sustainability and data-driven decisions to improve quality and reduce waste.</p>
+          <ul class="bullets">
+            <li>Lean manufacturing & efficiency optimization</li>
+            <li>Textile testing (physical & chemical)</li>
+            <li>Merchandising coordination for international buyers</li>
+            <li>Data-driven problem solving & visual reporting</li>
+          </ul>
+        </div>
+        <div class="card quick-facts">
+          <h3>Quick Facts</h3>
+          <p><strong>Education:</strong> BUTEX — BSc Textile Engineering (TEM) — CGPA 3.37</p>
+          <p><strong>Internship:</strong> JK Knit Composite Ltd — R&D & Production</p>
+          <p><strong>Languages:</strong> Bangla, English, Hindi</p>
+          <p><strong>Tools:</strong> Photoshop, Illustrator, Canva, Excel, DaVinci Resolve</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="container projects reveal" id="projects">
+      <h2>Selected Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-media" style="background-image:linear-gradient(180deg, rgba(2,6,23,0.4), rgba(0,0,0,0.4)), url('assets/sample-project-1.jpg');"></div>
+          <div class="project-body">
+            <h3>Process Efficiency Analysis (IE Support)</h3>
+            <p>Assisted industrial engineering team in workflow analysis, contributing to a 10% improvement in overall process efficiency.</p>
+            <div class="meta"><span>Role: Intern (R&D & Production)</span><span>Tools: Excel, Time Studies</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media" style="background-image:linear-gradient(180deg, rgba(2,6,23,0.4), rgba(0,0,0,0.4)), url('assets/sample-project-2.jpg');"></div>
+          <div class="project-body">
+            <h3>Merchandising Coordination for International Buyers</h3>
+            <p>Supported merchandising for Mango and NEXT ensuring sample readiness and on-time coordination between factory and buyers.</p>
+            <div class="meta"><span>Role: Merchandising Support</span><span>Outcome: On-time delivery</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media" style="background-image:linear-gradient(180deg, rgba(2,6,23,0.4), rgba(0,0,0,0.4)), url('assets/sample-project-3.jpg');"></div>
+          <div class="project-body">
+            <h3>Textile Testing & Quality Assurance</h3>
+            <p>Executed physical and chemical testing for knit fabrics and contributed to quality inspection processes in the finishing line.</p>
+            <div class="meta"><span>Role: Lab Support</span><span>Tools: Lab Equipment, QC Checklists</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="container gallery-section reveal" id="gallery">
+      <h2>Photo Gallery</h2>
+      <p class="muted">Filter by category to view images section-wise. Click any photo to open the viewer.</p>
+
+      <div class="gallery-controls">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="internship">Internship</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+        <button class="filter-btn" data-filter="art">Art</button>
+        <button class="filter-btn" data-filter="samples">Samples</button>
+      </div>
+
+      <div id="galleryGrid" class="gallery-grid-multi">
+        <!-- Example items (replace src with your images) -->
+        <div class="gallery-item" data-category="internship">
+          <img src="assets/gallery/intern-1.jpg" alt="Internship - knitting floor">
+          <div class="caption">Knitting production at JK Knit Composite Ltd</div>
+        </div>
+
+        <div class="gallery-item" data-category="samples">
+          <img src="assets/gallery/sample-1.jpg" alt="Fabric sample">
+          <div class="caption">Variable fabric structure sample</div>
+        </div>
+
+        <div class="gallery-item" data-category="events">
+          <img src="assets/gallery/event-1.jpg" alt="BUTEX event">
+          <div class="caption">BUTEX Literature Club event</div>
+        </div>
+
+        <div class="gallery-item" data-category="art">
+          <img src="assets/gallery/art-1.jpg" alt="Art exhibition">
+          <div class="caption">KPR Art Exhibition - Best Artist</div>
+        </div>
+
+        <div class="gallery-item" data-category="internship">
+          <img src="assets/gallery/intern-2.jpg" alt="Lab testing">
+          <div class="caption">Physical testing lab</div>
+        </div>
+
+        <div class="gallery-item" data-category="events">
+          <img src="assets/gallery/event-2.jpg" alt="Fest">
+          <div class="caption">Digital Art segment — Intra Departmental Fest</div>
+        </div>
+
+        <!-- add more items as needed -->
+      </div>
+
+      <!-- lightbox / viewer -->
+      <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="close" aria-label="Close viewer" onclick="closeLightbox()">✕</button>
+        <button class="nav prev" aria-label="Previous" onclick="navigateLightbox(-1)">‹</button>
+        <div class="lightbox-content">
+          <img id="lightboxImage" src="" alt="">
+          <div id="lightboxCaption" class="caption"></div>
+        </div>
+        <button class="nav next" aria-label="Next" onclick="navigateLightbox(1)">›</button>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="container contact reveal" id="contact">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Let's collaborate</h3>
+          <p class="muted">Available for internships, freelance textile projects, and manufacturing coordination roles.</p>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:arponbutextem65@gmail.com">arponbutextem65@gmail.com</a></li>
+            <li><strong>Phone:</strong> +8801789849716</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arponsaha/" target="_blank" rel="noopener">arponsaha</a></li>
+          </ul>
+        </div>
+
+        <form class="card contact-form" onsubmit="return contactSubmit(event)">
+          <label>
+            Your name
+            <input name="name" type="text" required>
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn" type="submit">Send message</button>
+            <button class="btn outline" type="reset">Reset</button>
+          </div>
+          <p class="muted small">Form needs a form-handler (Netlify, Formspree). See README for details.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2025 Arpon Saha — Textile Engineer</div>
+      <div class="muted small">Built for GitHub Pages • Replace sample images in <code>assets/gallery/</code> with your photos</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
